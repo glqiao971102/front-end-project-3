@@ -66,6 +66,8 @@ input[type="submit"] {
     
 }
 
+
+
 /* class  */
 .main-header,
 .main-content,
@@ -135,15 +137,36 @@ input[type="submit"] {
 
 
   .main-footer {
-
+    background-color: darkblue;
     font-style: italic;
     font-weight: bold;
   }
 /* pseudo class */
 
 input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder
+
+ {
 
     text-align: right;
     color: grey;
+}
+
+input:focus {
+
+    background-color: lightskyblue;
+    border-bottom: solid 2px black;
+
+}
+
+/* media queuries */
+
+@media (min-width: 768px){
+
+    .container{
+
+        
+        justify-content: center;
+    }
+
 }
