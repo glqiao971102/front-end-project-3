@@ -141,6 +141,19 @@ input[type="submit"] {
     font-style: italic;
     font-weight: bold;
   }
+
+  .textarea-div {
+
+    margin-top: 15px;
+
+}
+
+.news-div {
+
+    margin-bottom: 15px;
+
+
+}
 /* pseudo class */
 
 input[type="text"]::placeholder,
@@ -152,21 +165,57 @@ input[type="email"]::placeholder
     color: grey;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 
     background-color: lightskyblue;
-    border-bottom: solid 2px black;
+    border-bottom: solid 1px black;
+    transition: background-color 2s;
 
 }
+
+
 
 /* media queuries */
 
 @media (min-width: 768px){
 
     .container{
-
-        
         justify-content: center;
+        
     }
 
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item{
+        flex: 1;
+    }
+
+    .item-2 {
+        flex: 2;
+    }    
+
+    .newsletter {
+        
+        width: 100%;
+        margin: auto;
+    }
+
+    .newsletter-fieldset {
+
+        margin-right: 75px;
+
+    }
+
+    input[type="submit"] {
+        
+        width: 450px;
+        margin-right: 50px;
+    }
+
+    
 }
