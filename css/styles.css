@@ -1,0 +1,149 @@
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    min-height: 100vh;
+}
+
+p,
+label{
+    font-size: .9em;
+    color: lightslategray;
+
+}
+
+fieldset{
+
+    border: none;
+
+}
+
+legend {
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[name="user_state"] {
+
+    padding: 15px 10px;
+    width: 400px;
+    background-color: lightgray;
+    border: none;
+}
+
+input[name="user_zipCode"]{
+
+    width: 200px;
+    padding-bottom: 25px;
+    
+}
+
+textarea {
+
+    background-color: lightgray;
+
+}
+
+input[type="submit"] {
+
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    align-self: center;
+    
+}
+
+/* class  */
+.main-header,
+.main-content,
+.main-footer{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+
+.main-header{
+    
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+.sign-up-header{
+    
+    text-align: center;
+    background-color: white;
+    padding-bottom: 20px;
+    border-bottom: 5px solid black;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-information{
+
+    padding-top: 20px;
+    margin: 5px auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+
+.newsletter{
+
+    margin: 5px auto;
+    width: 90%;
+
+}
+
+.container{
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+  .item {
+    margin: 5px 0;
+    
+  }
+
+
+  .main-footer {
+
+    font-style: italic;
+    font-weight: bold;
+  }
+/* pseudo class */
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+
+    text-align: right;
+    color: grey;
+}
