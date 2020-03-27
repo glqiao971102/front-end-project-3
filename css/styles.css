@@ -217,5 +217,10 @@ textarea:focus {
         margin-right: 50px;
     }
 
+    label[class="item"] {
+
+        margin-top: 25px;
+
+    }
     
 }
