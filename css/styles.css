@@ -220,7 +220,19 @@ textarea:focus {
     label[class="item"] {
 
         margin-top: 25px;
+        
+    }
 
+    .zip-label{
+
+        margin-top: 25px;
+        margin-right: 100px;
+
+    }
+    .zip-item{
+        
+        flex: .5 ;
+        margin-top: 10px;
     }
     
 }
